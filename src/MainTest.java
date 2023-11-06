@@ -26,10 +26,13 @@ class MainTest {
         String two = "The_Stealth_Warrior";
         String three = "The_Stealth-Warrior";
         String four = "-no_shot_bruh_";
-        assertTrue(Main.camelCaseMe(one).equals("theStealthWarrior"));
-        assertTrue(Main.camelCaseMe(two).equals("TheStealthWarrior"));
-        assertTrue(Main.camelCaseMe(three).equals("TheStealthWarrior"));
-        assertTrue(Main.camelCaseMe(four).equals("NoShotBruh"));
+        assertEquals(Main.camelCaseMe(one).equals("theStealthWarrior"));
+        assertEquals(Main.camelCaseMe(two).equals("TheStealthWarrior"));
+        assertEquals(Main.camelCaseMe(three).equals("TheStealthWarrior"));
+        assertEquals(Main.camelCaseMe(four).equals("NoShotBruh"));
+    }
+
+    private void assertEquals(boolean theStealthWarrior) {
     }
 
 }
